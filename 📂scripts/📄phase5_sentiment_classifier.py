@@ -86,29 +86,29 @@ for model_name, metrics in all_results.items():
 
 
 # Results:
-=== Logistic Regression ===
-Accuracy: 0.8396
-F1 Score: 0.7666
-Weighted Precision: 0.7427
-Weighted Recall: 0.8396
-AUC: 0.5589
-PR AUC: 0.8583
+# === Logistic Regression ===
+# Accuracy: 0.8396
+# F1 Score: 0.7666
+# Weighted Precision: 0.7427
+# Weighted Recall: 0.8396
+# AUC: 0.5589
+# PR AUC: 0.8583
 
-=== Decision Tree ===
-Accuracy: 0.8397
-F1 Score: 0.7665
-Weighted Precision: 0.7051
-Weighted Recall: 0.8397
-AUC: 0.5000
-PR AUC: 0.8397
+# === Decision Tree ===
+# Accuracy: 0.8397
+# F1 Score: 0.7665
+# Weighted Precision: 0.7051
+# Weighted Recall: 0.8397
+# AUC: 0.5000
+# PR AUC: 0.8397
 
-=== Random Forest ===
-Accuracy: 0.8397
-F1 Score: 0.7665
-Weighted Precision: 0.7051
-Weighted Recall: 0.8397
-AUC: 0.5893
-PR AUC: 0.8678
+# === Random Forest ===
+# Accuracy: 0.8397
+# F1 Score: 0.7665
+# Weighted Precision: 0.7051
+# Weighted Recall: 0.8397
+# AUC: 0.5893
+# PR AUC: 0.8678
 
 
 # Step 11: Save results:
