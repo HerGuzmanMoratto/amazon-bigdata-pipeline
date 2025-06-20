@@ -1,5 +1,5 @@
 #### 📄phase3_feature_engineering 
-# Importing libraries, the dataset and Initializating session to the dataset:
+# Importing libraries, the dataset and initializing session to the dataset:
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, when
 from pyspark.ml.feature import VectorAssembler
@@ -76,15 +76,15 @@ corr_df = pd.DataFrame(corr_array, index=feature_names, columns=feature_names)
 print(corr_df)
 ## Results:
 
-                      price  helpful_vote  verified_purchase  ...    rating  average_rating  rating_number
-price              1.000000      0.024932          -0.050321  ... -0.010902       -0.084184      -0.038756
-helpful_vote       0.024932      1.000000          -0.001991  ... -0.026870       -0.011779       0.002589
-verified_purchase -0.050321     -0.001991           1.000000  ...  0.010035        0.029570       0.034520
-sentiment_label   -0.008715     -0.024699           0.003818  ...  0.964516        0.245807      -0.054227
-is_fake            0.019638     -0.017248          -0.876106  ...  0.011763       -0.010517      -0.027876
-rating            -0.010902     -0.026870           0.010035  ...  1.000000        0.258504      -0.052696
-average_rating    -0.084184     -0.011779           0.029570  ...  0.258504        1.000000       0.041619
-rating_number     -0.038756      0.002589           0.034520  ... -0.052696        0.041619       1.000000
+##                       price  helpful_vote  verified_purchase  ...    rating  average_rating  rating_number
+## price              1.000000      0.024932          -0.050321  ... -0.010902       -0.084184      -0.038756
+## helpful_vote       0.024932      1.000000          -0.001991  ... -0.026870       -0.011779       0.002589
+## verified_purchase -0.050321     -0.001991           1.000000  ...  0.010035        0.029570       0.034520
+## sentiment_label   -0.008715     -0.024699           0.003818  ...  0.964516        0.245807      -0.054227
+## is_fake            0.019638     -0.017248          -0.876106  ...  0.011763       -0.010517      -0.027876
+## rating            -0.010902     -0.026870           0.010035  ...  1.000000        0.258504      -0.052696
+## average_rating    -0.084184     -0.011779           0.029570  ...  0.258504        1.000000       0.041619
+## rating_number     -0.038756      0.002589           0.034520  ... -0.052696        0.041619       1.000000
 
 
 ## step 6. Save correlation matrix to file (as plain text)
@@ -137,11 +137,11 @@ final_ds.coalesce(1).write \
     .csv("gs://assignment_pipeline/feature_engineered_ds/")
 
 
-Final dataset records:
-first cleaning process with errors:
-3653916                            
-Second cleaning process:
-3620007                                              
+## Final dataset records:
+## first cleaning process with errors:
+## 3653916                            
+## ## Second cleaning process:
+## 3620007                                              
 
-dataset for fake review:
-3615845
+## dataset for fake review:
+## 3615845
