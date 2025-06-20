@@ -21,17 +21,20 @@ Correlation analysis helped to identify relevant features to implement in the cl
   - Whether the review sentiment is **positive** or **negative**.
 - Compare model performance using metrics such as Accuracy, F1, AUC, and PR AUC.
 
-##  Technologies Used
+## 🛠️  Technologies Used
 
 - **Google Cloud Platform (GCP)** – Infrastructure, Dataproc cluster, and Cloud Storage
 - **Apache Hadoop (HDFS)** – Distributed file system
 - **Apache Hive** – SQL-like EDA and query analysis
 - **Apache Spark / PySpark** – Data cleaning, transformation, and modeling
-- **MLlib (Spark)** – Machine learning implementation
+- **MLlib (Spark)** – Machine learning implementation:
+- Implement classification models for:
+    -Fake review detection
+    -Sentiment classification
 - **Python / Jupyter Notebook** – Local data validation
 - **GitHub** – Code versioning and outputs
 
-  ## Datasets
+  ## 📂 Datasets
 
 This project uses two files from the Amazon Customer Reviews Dataset:
 - `Industrial_and_Scientific.jsonl` – Review content including ratings, votes, and text.
@@ -39,7 +42,7 @@ This project uses two files from the Amazon Customer Reviews Dataset:
 
 > Source: [Amazon Customer Reviews Dataset]([https://s3.amazonaws.com/amazon-reviews-pds/readme.html](https://amazon-reviews-2023.github.io/))
 
-##  Machine Learning Tasks
+## 🤖 Machine Learning Tasks
 
 ### 1. Fake Review Detection
 - **Label (`is_fake`)**:
@@ -56,7 +59,7 @@ This project uses two files from the Amazon Customer Reviews Dataset:
 - **Features**:
   - Structured metadata: `price`, `helpful_vote`, `verified_purchase`
 
-##  Model Evaluation Metrics
+##  📈 Model Evaluation Metrics
 
 - Accuracy
 - F1 Score
@@ -64,10 +67,42 @@ This project uses two files from the Amazon Customer Reviews Dataset:
 - PR AUC (Precision-Recall Area)
 
 
-## Outputs
+## 📤Outputs
 
 - Fake_review_results.txt
 - Classification_results.txt
 - Correlation_matrix.txt
 
+## Folder Structure
+
+├── models/
+│   ├── fake_review_model/
+│   ├── fake_review_model2/
+│   ├── logistic_regression_model/
+│   └── random_forest_model/      
+├── scripts/                   # PySpark and Hive scripts    # Jupyter Notebooks for prototyping
+└── README.md
+
+## 📚 Methodology
+- This project follows the CRISP-DM methodology:
+
+   - Business Understanding
+
+   - Data Understanding
+
+   - Data Preparation
+
+   - Modeling
+
+   - Evaluation
+
+  - Reproducibility setup in GCS
+
 ## *** IMPORTANT NOTE: THIS PROJECT WAS DEVELOPED FOR EDUCATIONAL PURPOSES, USE IT AS A GUIDE OR BASIS FOR FURTHER OR DEEPER ANALYSIS IN THE STUDIED AREAS. ***
+## ** While results are realistic, further validation is needed for production-level deployment. **
+
+📬 Contact
+- Hernan Guzman
+- Industrial engineer, Data Analyst & Big Data Enthusiast
+- Email: herguzman12@gmail.com
+- LinkedIn: www.linkedin.com/in/hernan-guzman-m-741124207
